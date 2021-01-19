@@ -1,0 +1,14 @@
+footer a img {
+  width: 212px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 20px auto;
+  a {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 8px auto;
+  }
+}
