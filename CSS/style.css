@@ -27,6 +27,10 @@ h2 {
   font-size: 1.8rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 #addtocart {
   margin: 20px auto;
   color: #fff;
@@ -37,17 +41,50 @@ h2 {
   text-shadow: 0 1px 1px #261624;
 }
 
-#payment {
+#addtocart::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  display: inline-block;
+  font-weight: 900;
+  margin: 0 10px 0 0;
+}
+
+/* liens stylisés comme des boutons */
+#payment, #back-to-index {
   display: block;
   margin: 15px auto;
   color: #fff;
-  background-color: #CF7E48;
   border: none;
   padding: 18px;
   border-radius: 50px;
   text-shadow: 0 1px 1px #261624;
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
+  width: 230px;
+}
+
+#payment {
+  background-color: #CF7E48;
+}
+
+#back-to-index {
+  background-color: #8F5BFE;
+  text-decoration: none !important;
+  margin: 50px auto 200px auto;
+}
+
+/* boutons radio */
+input[type=radio] {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #8F5BFE;
+}
+input[type=radio]:checked {
+  outline: none;
+  background-color: #CF7E48;
 }
 
 #menuToggle {
@@ -283,13 +320,25 @@ footer ul a {
 #cart-content {
   margin: 0 0 25px 0;
 }
+#cart-content img {
+  border-radius: 50px;
+}
+#cart-content div {
+  padding: 0 30px;
+}
 
 #cart-total {
   padding: 0 30px;
 }
-#cart-total div:first-child, #cart-total div:nth-child(2) {
+#cart-total #total-1, #cart-total #total-2 {
   display: flex;
   justify-content: space-between;
+}
+#cart-total #total-1 {
+  font-weight: bold;
+}
+#cart-total #total-1 p {
+  font-size: 1.8rem;
 }
 
 #payment-method {
@@ -298,6 +347,18 @@ footer ul a {
 }
 #payment-method .fab {
   font-size: 3rem;
+}
+
+#thanks h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+#thanks p {
+  text-align: center;
+  margin: 5px auto;
+}
+#thanks p:nth-child(3) {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

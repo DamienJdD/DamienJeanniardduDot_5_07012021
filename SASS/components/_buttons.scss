@@ -8,15 +8,49 @@
   text-shadow: 0 1px 1px $color-font;
 }
 
-#payment {
+#addtocart::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f218";
+  display: inline-block;
+  font-weight: 900;
+  margin: 0 10px 0 0;
+}
+
+/* liens stylisés comme des boutons */
+#payment, #back-to-index {
   display: block;
   margin: 15px auto;
   color: #fff;
-  background-color: $color-secondary;
   border: none;
   padding: 18px;
   border-radius: 50px;
   text-shadow: 0 1px 1px $color-font;
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
+  width: 230px;
+}
+
+#payment {
+  background-color: $color-secondary;
+}
+
+#back-to-index {
+  background-color: $color-tertiary;
+  text-decoration: none !important;
+  margin: 50px auto 200px auto;
+}
+
+/* boutons radio */
+
+input[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $color-tertiary;
+  &:checked {
+    outline: none;
+    background-color: $color-secondary;
+  }
 }

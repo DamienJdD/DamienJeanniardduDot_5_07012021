@@ -52,24 +52,31 @@
     </div>
 
     <div id="cart-total">
-        <div>
+        <div id="total-1">
             <p>Sous-total</p>
             <p>2,00 €</p>
         </div>
-        <div>
+        <div id="total-2">
             <p>Livraison</p>
             <i class="fas fa-info-circle"></i>
         </div>
-        <p>Mode de livraison :</p>
-        <div>
-            <input type="radio" id="point-relais" name="delivery" value="Livraison en point relais">
-            <label for="point-relais">Livraison en point relais</label>
-        </div>
-        <div>
-            <input type="radio" id="domicile" name="delivery" value="Livraison à domicile">
-            <label for="domicile">Livraison à domicile</label>
-        </div>
-        <button id="payment" type="button">PAIEMENT</button>
+
+        <form>
+            <fieldset>
+                <legend>Mode de livraison :</legend>
+                <div>
+                    <input type="radio" id="point-relais" name="delivery" value="Livraison en point relais">
+                    <label for="point-relais">Livraison en point relais</label>
+                </div>
+                <div>
+                    <input type="radio" id="domicile" name="delivery" value="Livraison à domicile">
+                    <label for="domicile">Livraison à domicile</label>
+                </div>
+            </fieldset>
+        </form>
+
+        <a href="confirmation.html" id="payment" type="button">PAIEMENT</a>
+
         <p>Modes de paiement acceptés :</p>
         <div id="payment-method">
             <i class="fab fa-cc-visa"></i>
@@ -93,3 +100,4 @@
 </footer>
 
 </body>
+</html>
