@@ -10,8 +10,8 @@ body {
 }
 
 * {
+  font-family: "Fraunces", sans-serif;
   color: #261624;
-  font-family: "Avenir Next", "Avenir", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -207,7 +207,8 @@ nav {
 }
 
 footer a img {
-  width: 212px;
+  width: 150px;
+  margin: 0 0 0 5px;
 }
 
 footer ul {
@@ -219,6 +220,7 @@ footer ul a {
   width: 50%;
   text-align: center;
   margin: 0 auto 8px auto;
+  text-decoration: none;
 }
 
 #index-section {
