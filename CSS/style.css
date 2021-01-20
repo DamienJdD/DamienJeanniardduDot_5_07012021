@@ -300,38 +300,4 @@ footer ul a {
   font-size: 3rem;
 }
 
-/* menu déroulant pour le mode de livraison */
-#delivery li {
-  list-style: none !important;
-  padding: 10px;
-  text-decoration: none;
-}
-#delivery ul {
-  margin: auto;
-  display: block;
-  width: 180px;
-}
-#delivery ul li {
-  list-style: none;
-  line-height: 44px;
-}
-#delivery ul li a {
-  padding: 10px;
-  text-decoration: none;
-}
-
-#delivery ul li ul {
-  display: none;
-}
-
-#delivery ul li:active ul {
-  z-index: 99999;
-  display: list-item !important;
-  position: absolute;
-  margin: 5px 0 0 -10px;
-}
-#delivery ul li:active ul li {
-  float: none;
-}
-
 /*# sourceMappingURL=style.css.map */

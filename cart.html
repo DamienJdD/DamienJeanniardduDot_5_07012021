@@ -60,16 +60,14 @@
             <p>Livraison</p>
             <i class="fas fa-info-circle"></i>
         </div>
-        <!-- Menu déroulant sur le même modèle que page produit -->
+        <p>Mode de livraison :</p>
         <div>
-            <ul id="delivery">
-                <li>Mode de livraison
-                    <ul>
-                        <li><a>Livraison en Point Relais</a></li>
-                        <li><a>Livraison à domicile</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <input type="radio" id="point-relais" name="delivery" value="Livraison en point relais">
+            <label for="point-relais">Livraison en point relais</label>
+        </div>
+        <div>
+            <input type="radio" id="domicile" name="delivery" value="Livraison à domicile">
+            <label for="domicile">Livraison à domicile</label>
         </div>
         <button id="payment" type="button">PAIEMENT</button>
         <p>Modes de paiement acceptés :</p>
