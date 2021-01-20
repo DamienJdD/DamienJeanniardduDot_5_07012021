@@ -37,6 +37,19 @@ h2 {
   text-shadow: 0 1px 1px #261624;
 }
 
+#payment {
+  display: block;
+  margin: 15px auto;
+  color: #fff;
+  background-color: #CF7E48;
+  border: none;
+  padding: 18px;
+  border-radius: 50px;
+  text-shadow: 0 1px 1px #261624;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 #menuToggle {
   display: block;
   position: relative;
@@ -255,6 +268,28 @@ footer ul a {
 
 #product-section {
   margin: 0 5px 40px 5px;
+}
+
+#cart-section {
+  margin: 5px;
+}
+#cart-section h2 {
+  display: block;
+  margin: 15px 30px;
+  padding: 10px;
+  border-bottom: 2px solid #CF7E48;
+}
+
+#cart-content {
+  margin: 0 0 25px 0;
+}
+
+#cart-total {
+  padding: 0 30px;
+}
+#cart-total div:first-child, #cart-total div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

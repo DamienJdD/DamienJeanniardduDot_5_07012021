@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Orinoco</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/normalizer.min.css">
@@ -33,6 +35,52 @@
         </a>
     </nav>
 </header>
+
+<section id="cart-section">
+    <h2>Votre panier</h2>
+
+    <!-- Inspiré du panier Asos : https://www.codeur.com/blog/panier-e-commerce-reussi/ -->
+
+    <div id="cart-content">
+        <img src="css/images/pomme.jpg">
+        <div>
+            <p>2,00 €</p>
+            <h3>"Produit 1"</h3>
+            <p>Option sélectionnée : aucune</p>
+            <p>Quantité : 1</p>
+        </div>
+    </div>
+
+    <div id="cart-total">
+        <div>
+            <p>Sous-total</p>
+            <p>2,00 €</p>
+        </div>
+        <div>
+            <p>Livraison</p>
+            <i class="fas fa-info-circle"></i>
+        </div>
+        <!-- Menu déroulant sur le même modèle que page produit -->
+        <div>
+            <ul id="delivery">
+                <li>Mode de livraison
+                    <ul>
+                        <li><a>Livraison en Point Relais</a></li>
+                        <li><a>Livraison à domicile</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="payment" type="button">PAIEMENT</button>
+        <p>Modes de paiement acceptés :</p>
+        <div id="payment-method">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+        </div>
+    </div>
+</section>
 
 <footer>
     <a>
