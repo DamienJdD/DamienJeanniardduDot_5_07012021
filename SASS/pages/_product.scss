@@ -1,16 +1,28 @@
-#product-info {
-  text-align: center;
-  p {
-    font-weight: bold;
-    margin: 5px;
+#product-section {
+  margin: 0 5px 40px 5px;
+  #product-content{
+    @include tablet {
+      display: flex;
+      margin: 40px 20px;
+    }
+    img {
+      border-radius: 50px;
+      @include tablet {
+        width: 390px;
+      }
+    }
   }
 }
 
-#product-section {
-  margin: 0 5px 40px 5px;
-  div {
-    img {
-      border-radius: 50px;
-    }
+#product-info {
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  p {
+    font-weight: bold;
+    margin: 5px;
   }
 }

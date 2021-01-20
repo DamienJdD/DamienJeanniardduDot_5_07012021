@@ -2,6 +2,11 @@
   margin: 20px auto;
   ul {
     margin: 20px auto;
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   }
 }
 
@@ -9,9 +14,17 @@
   border-radius: 20px 20px;
   margin: 20px 5px;
   box-shadow: 0 4px 4px silver;
+  @include tablet {
+    width: 460px;
+    margin: 30px auto;
+  }
   img {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    @include desktop {
+      max-height: 300px;
+      width: 100%;
+    }
   }
   div {
     display: flex;

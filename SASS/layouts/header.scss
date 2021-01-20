@@ -4,8 +4,35 @@
   position: absolute;
   right: 9px;
   top: 9px;
+  @include desktop {
+    right: 30px;
+  }
 }
 
 nav {
   height: 120px;
+}
+
+#desktop-menu {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 45px 0;
+    a{
+      li {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+#menuToggle {
+  @include desktop {
+    display: none;
+  }
 }
