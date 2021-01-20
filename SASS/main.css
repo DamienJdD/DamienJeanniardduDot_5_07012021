@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +25,16 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+}
+
+#addtocart {
+  margin: 20px auto;
+  color: #fff;
+  background-color: #CF7E48;
+  border: none;
+  padding: 18px;
+  border-radius: 50px;
+  text-shadow: 0 1px 1px #261624;
 }
 
 #menuToggle {
@@ -139,6 +150,50 @@ h2 {
   transform: none;
 }
 
+/* basé sur le modèle et les explications de https://www.web-eau.net/blog/comment-realiser-un-menu-deroulant-en-css3 */
+#product-info li {
+  list-style: none !important;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+#product-info ul {
+  background-color: #8F5BFE;
+  margin: auto;
+  display: block;
+  width: 180px;
+}
+#product-info ul li {
+  list-style: none;
+  line-height: 44px;
+  text-align: center;
+  background-color: #8F5BFE;
+}
+#product-info ul li a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#product-info li:active {
+  border-bottom: 3px #fff solid;
+}
+
+#product-info ul li ul {
+  display: none;
+}
+
+/* rend le menu déroulant caché par défaut */
+#product-info ul li:active ul {
+  z-index: 99999;
+  display: list-item !important;
+  position: absolute;
+  margin: 5px 0 0 -10px;
+}
+#product-info ul li:active ul li {
+  float: none;
+}
+
 #logo {
   width: 212px;
   display: block;
@@ -166,10 +221,10 @@ footer ul a {
   margin: 0 auto 8px auto;
 }
 
-section {
+#index-section {
   margin: 20px auto;
 }
-section ul {
+#index-section ul {
   margin: 20px auto;
 }
 
@@ -186,6 +241,18 @@ section ul {
   display: flex;
   justify-content: space-between;
   margin: 1px 5%;
+}
+
+#product-info {
+  text-align: center;
+}
+#product-info p {
+  font-weight: bold;
+  margin: 5px;
+}
+
+#product-section {
+  margin: 0 5px 40px 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
