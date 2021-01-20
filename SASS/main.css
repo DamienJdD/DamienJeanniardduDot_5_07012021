@@ -244,6 +244,14 @@ input[type=radio]:checked {
   float: none;
 }
 
+#customer-details {
+  padding: 30px;
+  margin: 0 0 15px 0;
+}
+#customer-details .entry-form input {
+  width: 100%;
+}
+
 #logo {
   width: 212px;
   display: block;
@@ -293,6 +301,7 @@ footer ul a {
   display: flex;
   justify-content: space-between;
   margin: 1px 5%;
+  padding: 10px;
 }
 
 #product-info {
@@ -305,6 +314,9 @@ footer ul a {
 
 #product-section {
   margin: 0 5px 40px 5px;
+}
+#product-section div img {
+  border-radius: 50px;
 }
 
 #cart-section {
