@@ -2,6 +2,12 @@ footer {
   @include tablet {
     margin: 50px 0 0 0;
   }
+  @include desktop {
+    padding: 0 10%;
+  }
+  @include hd {
+    padding: 0 15%;
+  }
 }
 
 footer a img {

@@ -299,6 +299,16 @@ nav {
     margin: 50px 0 0 0;
   }
 }
+@media (min-width: 769px) {
+  footer {
+    padding: 0 10%;
+  }
+}
+@media (min-width: 1350px) {
+  footer {
+    padding: 0 15%;
+  }
+}
 
 footer a img {
   width: 150px;
@@ -385,6 +395,16 @@ footer ul a {
 @media (min-width: 450px) {
   #product-section #product-content img {
     width: 390px;
+  }
+}
+@media (min-width: 769px) {
+  #product-section #product-content img {
+    width: 500px;
+  }
+}
+@media (min-width: 1350px) {
+  #product-section #product-content {
+    padding: 0 20%;
   }
 }
 

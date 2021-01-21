@@ -10,6 +10,12 @@
       @include tablet {
         width: 390px;
       }
+      @include desktop {
+        width: 500px;
+      }
+    }
+    @include hd {
+      padding: 0 20%;
     }
   }
 }
