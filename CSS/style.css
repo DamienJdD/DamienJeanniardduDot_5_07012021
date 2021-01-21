@@ -328,11 +328,17 @@ footer ul a {
 #index-section ul {
   margin: 20px auto;
 }
+
 @media (min-width: 769px) {
-  #index-section ul {
+  #index-section-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+}
+@media (min-width: 769px) {
+  #index-section-list a {
+    display: inline-block;
   }
 }
 
