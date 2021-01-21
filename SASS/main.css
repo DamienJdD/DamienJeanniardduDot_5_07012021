@@ -433,6 +433,13 @@ footer ul a {
   border-bottom: 2px solid #CF7E48;
 }
 
+@media (min-width: 1350px) {
+  #cart-section-content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 #cart-content {
   margin: 0 0 25px 0;
 }
@@ -448,6 +455,11 @@ footer ul a {
 @media (min-width: 450px) {
   #cart-content img {
     width: 350px;
+  }
+}
+@media (min-width: 1350px) {
+  #cart-content img {
+    width: 550px;
   }
 }
 #cart-content div {

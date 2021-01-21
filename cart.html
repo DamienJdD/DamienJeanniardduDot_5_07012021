@@ -47,66 +47,69 @@
 
 <section id="cart-section">
     <h2>Votre panier</h2>
+    <div id="cart-section-content">
+        <!-- Inspiré du panier Asos : https://www.codeur.com/blog/panier-e-commerce-reussi/ -->
 
-    <!-- Inspiré du panier Asos : https://www.codeur.com/blog/panier-e-commerce-reussi/ -->
-
-    <div id="cart-content">
-        <img src="css/images/pomme.jpg">
-        <div>
-            <p>2,00 €</p>
-            <h3>"Produit 1"</h3>
-            <p>Option sélectionnée : aucune</p>
-            <p>Quantité : 1</p>
-        </div>
-    </div>
-
-    <form action="" method="" class="entry-form" id="customer-details">
-        <div class="entry-form">
-            <label for="name">Nom :</label>
-            <input type="text" name="name" id="name" required>
-        </div>
-        <div class="entry-form">
-            <label for="email">Adresse mail :</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <div class="entry-form">
-            <label for="adress">Adresse postale :</label>
-            <input type="text" name="adress" id="adress" required>
-        </div>
-    </form>
-
-    <div id="cart-total">
-        <div id="total-1">
-            <p>Sous-total</p>
-            <p>2,00 €</p>
-        </div>
-        <div id="total-2">
-            <p>Livraison</p>
-            <i class="fas fa-info-circle"></i>
+        <div id="cart-content">
+            <img src="css/images/pomme.jpg">
+            <div>
+                <p>2,00 €</p>
+                <h3>"Produit 1"</h3>
+                <p>Option sélectionnée : aucune</p>
+                <p>Quantité : 1</p>
+            </div>
         </div>
 
-        <form>
-            <fieldset>
-                <legend>Mode de livraison :</legend>
-                <div>
-                    <input type="radio" id="point-relais" name="delivery" value="Livraison en point relais">
-                    <label for="point-relais">Livraison en point relais</label>
+        <div id="form-and-payment">
+            <form action="" method="" class="entry-form" id="customer-details">
+                <div class="entry-form">
+                    <label for="name">Nom :</label>
+                    <input type="text" name="name" id="name" required>
                 </div>
-                <div>
-                    <input type="radio" id="domicile" name="delivery" value="Livraison à domicile">
-                    <label for="domicile">Livraison à domicile</label>
+                <div class="entry-form">
+                    <label for="email">Adresse mail :</label>
+                    <input type="email" name="email" id="email" required>
                 </div>
-            </fieldset>
-        </form>
+                <div class="entry-form">
+                    <label for="adress">Adresse postale :</label>
+                    <input type="text" name="adress" id="adress" required>
+                </div>
+            </form>
 
-        <a href="confirmation.html" id="payment" type="button">PAIEMENT</a>
+            <div id="cart-total">
+                <div id="total-1">
+                    <p>Sous-total</p>
+                    <p>2,00 €</p>
+                </div>
+                <div id="total-2">
+                    <p>Livraison</p>
+                    <i class="fas fa-info-circle"></i>
+                </div>
 
-        <p>Modes de paiement acceptés :</p>
-        <div id="payment-method">
-            <i class="fab fa-cc-visa"></i>
-            <i class="fab fa-cc-mastercard"></i>
-            <i class="fab fa-cc-amex"></i>
-            <i class="fab fa-cc-paypal"></i>
+                <form>
+                    <fieldset>
+                        <legend>Mode de livraison :</legend>
+                        <div>
+                            <input type="radio" id="point-relais" name="delivery" value="Livraison en point relais">
+                            <label for="point-relais">Livraison en point relais</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="domicile" name="delivery" value="Livraison à domicile">
+                            <label for="domicile">Livraison à domicile</label>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <a href="confirmation.html" id="payment" type="button">PAIEMENT</a>
+
+                <p>Modes de paiement acceptés :</p>
+                <div id="payment-method">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
         </div>
     </div>
 </section>

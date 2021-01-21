@@ -8,6 +8,13 @@
   }
 }
 
+#cart-section-content {
+  @include hd {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 #cart-content {
   margin: 0 0 25px 0;
   @include tablet {
@@ -18,6 +25,9 @@
     border-radius: 50px;
     @include tablet {
       width: 350px;
+    }
+    @include hd {
+      width: 550px;
     }
   }
   div {
