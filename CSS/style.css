@@ -252,6 +252,9 @@ input[type=radio]:checked {
 #customer-details .entry-form input {
   width: 100%;
 }
+#customer-details .entry-form input:focus {
+  outline: 4px solid #CF7E48;
+}
 
 #logo {
   width: 212px;
@@ -292,6 +295,19 @@ nav {
   #menuToggle {
     display: none;
   }
+}
+
+/* animation au survol des liens */
+#menu a, #desktop-menu ul a {
+  color: #261624;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(143, 91, 254, 0.5) 0%, #8F5BFE 10%, transparent 10.01%) no-repeat left bottom;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+}
+
+#menu a:hover, #desktop-menu ul a:hover {
+  background-size: 100% 100%;
 }
 
 @media (min-width: 450px) {

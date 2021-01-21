@@ -36,3 +36,17 @@ nav {
     display: none;
   }
 }
+
+/* animation au survol des liens */
+
+#menu a, #desktop-menu ul a {
+  color: $color-font;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba($color-tertiary, 0.5) 0%, $color-tertiary 10%, transparent 10.01%) no-repeat left bottom;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+}
+
+#menu a:hover, #desktop-menu ul a:hover {
+  background-size: 100% 100%;
+}

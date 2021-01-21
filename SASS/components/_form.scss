@@ -5,5 +5,8 @@
     input {
       width: 100%;
     }
+    input:focus {
+      outline: 4px solid $color-secondary;
+    }
   }
 }
