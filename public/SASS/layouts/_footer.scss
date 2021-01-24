@@ -1,0 +1,45 @@
+footer {
+  @include tablet {
+    margin: 50px 0 0 0;
+  }
+  @include desktop {
+    padding: 0 10%;
+  }
+  @include hd {
+    padding: 0 15%;
+  }
+}
+
+footer a img {
+  width: 150px;
+  margin: 0 0 0 5px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 20px auto;
+  a {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 8px auto;
+    text-decoration: none;
+    @include tablet {
+      width: 25%;
+    }
+  }
+}
+
+/* animation au survol des liens */
+
+footer ul a {
+  color: $color-font;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba($color-tertiary, 0.5) 0%, $color-tertiary 10%, transparent 10.01%) no-repeat left bottom;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+}
+
+footer ul a:hover {
+  background-size: 100% 100%;
+}

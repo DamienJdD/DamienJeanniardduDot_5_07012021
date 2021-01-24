@@ -1,0 +1,35 @@
+#product-section {
+  margin: 0 5px 40px 5px;
+  #product-content{
+    @include tablet {
+      display: flex;
+      margin: 40px 20px;
+    }
+    img {
+      border-radius: 50px;
+      @include tablet {
+        width: 390px;
+      }
+      @include desktop {
+        width: 500px;
+      }
+    }
+    @include hd {
+      padding: 0 20%;
+    }
+  }
+}
+
+#product-info {
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  p {
+    font-weight: bold;
+    margin: 5px;
+  }
+}
