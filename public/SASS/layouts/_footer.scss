@@ -19,16 +19,19 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 20px auto;
-  a {
+  justify-content: space-evenly;
+  li{
     width: 50%;
     text-align: center;
-    margin: 0 auto 8px auto;
-    text-decoration: none;
     @include tablet {
       width: 25%;
     }
+    a {
+      margin: 0 auto 8px auto;
+      text-decoration: none;
+      }
+    }
   }
-}
 
 /* animation au survol des liens */
 

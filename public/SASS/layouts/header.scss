@@ -1,9 +1,9 @@
-#logo{
+#logo {
   width: 212px;
   display: block;
   position: absolute;
-  right: 9px;
-  top: 9px;
+  right: 15px;
+  top: 25px;
   @include desktop {
     right: 30px;
   }
@@ -18,11 +18,13 @@ nav {
   @include desktop {
     display: block;
   }
+
   ul {
     display: flex;
     justify-content: space-evenly;
     width: 60%;
     margin: 45px 0;
+
     li {
       a {
         font-size: 2.5rem;
