@@ -38,14 +38,24 @@ fetch("http://localhost:3000/api/furniture")
     )
     .then(
         function (response) {
-            for (let i = 0; i < response.length; i++) {
-                let firstItemNameSpot = document.querySelector('#index-section-list li:first-of-type a div h3');
-                let firstItemName = `${response[i].name}`;
-                firstItemNameSpot.innerHTML = firstItemName;
-            }
+            const indexSectionList = document.querySelector('#index-section-list');
 
-            return console.log(response);
+            for (let i = 0; i < response.length; i++) {
+                const product = `
+                <li class="card">
+                    <a href="product.html">
+                        <img src="${response[i].imageUrl}" alt="" />
+                        <div>
+                            <h3>${response[i].name}</h3>
+                            <p>${response[i].price} €</p>
+                        </div>
+                    </a>
+                </li>`;
+                indexSectionList.innerHTML += product;
+            }
+            return console.log(response)
         }
+
     )
     .catch(
         error => console.log("Erreur : " + error)
