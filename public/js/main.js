@@ -41,21 +41,24 @@ fetch("http://localhost:3000/api/furniture")
             const indexSectionList = document.querySelector('#index-section-list');
 
             for (let i = 0; i < response.length; i++) {
-                const product = `
-                <li class="card">
-                    <a href="product.html">
-                        <img src="${response[i].imageUrl}" alt="" />
-                        <div>
-                            <h3>${response[i].name}</h3>
-                            <p>${response[i].price} €</p>
-                        </div>
-                    </a>
-                </li>`;
-                indexSectionList.innerHTML += product;
-            }
-            return console.log(response)
-        }
+                let euroPrice = response[i].price / 100;
+                euroPrice = euroPrice.toLocaleString("fr-FR", {style: "currency", currency: "EUR"});
+                // passe les prix en centimes en euros avec deux décimales
 
+                const card = `
+                    <li class="card">
+                        <a href="product.html?id=${response[i]._id}">
+                            <img src="${response[i].imageUrl}" alt="" />
+                            <div>
+                                <h3>${response[i].name}</h3>
+                                <p>${euroPrice}</p>
+                            </div>
+                        </a>
+                    </li>`;
+                indexSectionList.innerHTML += card;
+            }
+            return console.log(response);
+        }
     )
     .catch(
         error => console.log("Erreur : " + error)
